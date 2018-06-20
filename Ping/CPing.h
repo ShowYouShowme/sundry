@@ -10,6 +10,9 @@
 #include <string>
 #include <thread> 
 
+/*
+* 进程同时能打开的文件数量是有限制的,Linux上面是65535,如果socket不使用了记得关闭,可以用shared_ptr来回收这种资源
+*/
 
 class CPing
 {
